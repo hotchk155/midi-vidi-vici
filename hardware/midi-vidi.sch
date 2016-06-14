@@ -15962,7 +15962,7 @@ A low-cost storage/filtering possibility in comparison to SMD versions
 <part name="R5" library="rcl" deviceset="R-EU_" device="R0805"/>
 <part name="R4" library="rcl" deviceset="R-EU_" device="R0805"/>
 <part name="C6" library="rcl" deviceset="C-EU" device="C0805"/>
-<part name="OK1" library="optocoupler" deviceset="6N138" device=""/>
+<part name="IC9" library="optocoupler" deviceset="6N138" device=""/>
 <part name="D1" library="jasons_stuff" deviceset="0805DIODE" device=""/>
 <part name="R21" library="rcl" deviceset="R-EU_" device="R0805"/>
 <part name="R19" library="rcl" deviceset="R-EU_" device="R0805"/>
@@ -16066,7 +16066,7 @@ A low-cost storage/filtering possibility in comparison to SMD versions
 <instance part="R5" gate="G$1" x="152.4" y="-63.5" rot="R180"/>
 <instance part="R4" gate="G$1" x="152.4" y="-50.8" rot="R180"/>
 <instance part="C6" gate="G$1" x="111.76" y="-88.9" rot="R90"/>
-<instance part="OK1" gate="G$1" x="-5.08" y="53.34"/>
+<instance part="IC9" gate="G$1" x="-5.08" y="53.34"/>
 <instance part="D1" gate="G$1" x="-17.78" y="55.88"/>
 <instance part="R21" gate="G$1" x="-25.4" y="58.42" rot="R180"/>
 <instance part="R19" gate="G$1" x="17.78" y="53.34" rot="R180"/>
@@ -16337,7 +16337,7 @@ A low-cost storage/filtering possibility in comparison to SMD versions
 <junction x="160.02" y="-71.12"/>
 </segment>
 <segment>
-<pinref part="OK1" gate="G$1" pin="GND"/>
+<pinref part="IC9" gate="G$1" pin="GND"/>
 <wire x1="7.62" y1="48.26" x2="25.4" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="R20" gate="G$1" pin="1"/>
 <wire x1="25.4" y1="48.26" x2="30.48" y2="48.26" width="0.1524" layer="91"/>
@@ -16660,7 +16660,7 @@ A low-cost storage/filtering possibility in comparison to SMD versions
 <label x="93.98" y="-50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="OK1" gate="G$1" pin="VCC"/>
+<pinref part="IC9" gate="G$1" pin="VCC"/>
 <wire x1="7.62" y1="58.42" x2="27.94" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="R19" gate="G$1" pin="1"/>
 <wire x1="27.94" y1="58.42" x2="30.48" y2="58.42" width="0.1524" layer="91"/>
@@ -16889,7 +16889,7 @@ A low-cost storage/filtering possibility in comparison to SMD versions
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="OK1" gate="G$1" pin="A"/>
+<pinref part="IC9" gate="G$1" pin="A"/>
 <pinref part="D1" gate="G$1" pin="P$2"/>
 <wire x1="-17.78" y1="56.388" x2="-17.78" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="R21" gate="G$1" pin="1"/>
@@ -16899,7 +16899,7 @@ A low-cost storage/filtering possibility in comparison to SMD versions
 </net>
 <net name="N$18" class="0">
 <segment>
-<pinref part="OK1" gate="G$1" pin="C"/>
+<pinref part="IC9" gate="G$1" pin="C"/>
 <pinref part="D1" gate="G$1" pin="P$1"/>
 <wire x1="-17.78" y1="51.308" x2="-17.78" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="48.26" x2="-35.56" y2="48.26" width="0.1524" layer="91"/>
@@ -16928,7 +16928,7 @@ A low-cost storage/filtering possibility in comparison to SMD versions
 </net>
 <net name="MIDI" class="0">
 <segment>
-<pinref part="OK1" gate="G$1" pin="VO"/>
+<pinref part="IC9" gate="G$1" pin="VO"/>
 <pinref part="R19" gate="G$1" pin="2"/>
 <wire x1="7.62" y1="53.34" x2="10.16" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="53.34" x2="12.7" y2="53.34" width="0.1524" layer="91"/>
@@ -16945,7 +16945,7 @@ A low-cost storage/filtering possibility in comparison to SMD versions
 </net>
 <net name="N$22" class="0">
 <segment>
-<pinref part="OK1" gate="G$1" pin="VB"/>
+<pinref part="IC9" gate="G$1" pin="VB"/>
 <pinref part="R20" gate="G$1" pin="2"/>
 <wire x1="7.62" y1="55.88" x2="12.7" y2="55.88" width="0.1524" layer="91"/>
 </segment>

@@ -1899,28 +1899,28 @@ Copyright: Würth Elektronik eiSos</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="ITEADstudio_DRC">
-<description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+<designrules name="hackvana">
+<description language="de">&lt;b&gt;EAGLE Design Rules für Hackvana&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
 die meisten Anwendungen passen. Sollte ihre Platine 
 besondere Anforderungen haben, treffen Sie die erforderlichen
 Einstellungen hier und speichern die Design Rules unter 
 einem neuen Namen ab.</description>
-<description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+<description language="en">&lt;b&gt;EAGLE Design Rules for Hackvana&lt;/b&gt;
 &lt;p&gt;
 The default Design Rules have been set to cover
 a wide range of applications. Your particular design
 may have different requirements, so please make the
 necessary adjustments and save your customized
 design rules under a new name.</description>
-<description language="zh">&lt;b&gt;Seeed Studio EAGLE Design Rules&lt;/b&gt;
+<description language="zh">&lt;b&gt;EAGLE Design Rules for Hackvana&lt;/b&gt;
 </description>
 <param name="layerSetup" value="(1*16)"/>
 <param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
 <param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
 <param name="mdWireWire" value="6mil"/>
-<param name="mdWirePad" value="6mil"/>
+<param name="mdWirePad" value="9mil"/>
 <param name="mdWireVia" value="6mil"/>
 <param name="mdPadPad" value="6mil"/>
 <param name="mdPadVia" value="6mil"/>
@@ -1930,12 +1930,12 @@ design rules under a new name.</description>
 <param name="mdSmdSmd" value="0mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="10mil"/>
-<param name="mdDrill" value="10mil"/>
+<param name="mdCopperDimension" value="6mil"/>
+<param name="mdDrill" value="6mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="6mil"/>
-<param name="msDrill" value="12mil"/>
-<param name="msMicroVia" value="12mil"/>
+<param name="msDrill" value="0.3mm"/>
+<param name="msMicroVia" value="0.25mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
 <param name="rvPadInner" value="0.25"/>
@@ -2287,13 +2287,12 @@ design rules under a new name.</description>
 <attribute name="NAME" x="58.166" y="39.878" size="1.27" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="52.07" y="38.1" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="OK1" library="optocoupler" package="DIL08" value="6N138" x="29.21" y="35.56" smashed="yes" rot="R270">
+<element name="IC9" library="optocoupler" package="DIL08" value="6N138" x="29.21" y="35.56" smashed="yes" rot="R270">
 <attribute name="OC_NEWARK" value="35K5294" x="29.21" y="35.56" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="6N138" x="29.21" y="35.56" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="VISHAY/TELEFUNKEN" x="29.21" y="35.56" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="9860150" x="29.21" y="35.56" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="26.289" y="40.894" size="1.27" layer="25" ratio="10"/>
-<attribute name="VALUE" x="28.575" y="39.116" size="1.27" layer="27" ratio="10" rot="R270"/>
+<attribute name="NAME" x="27.813" y="28.702" size="1.27" layer="25" ratio="10"/>
 </element>
 <element name="D1" library="jasons_stuff" package="0805DIODE" value="0805DIODE" x="27.94" y="35.56" smashed="yes" rot="MR270">
 <attribute name="NAME" x="27.262" y="31.1072" size="1.27" layer="22" rot="MR90"/>
@@ -2468,7 +2467,7 @@ design rules under a new name.</description>
 <contactref element="R9" pad="1"/>
 <contactref element="IC1" pad="11"/>
 <contactref element="C6" pad="2"/>
-<contactref element="OK1" pad="5"/>
+<contactref element="IC9" pad="5"/>
 <contactref element="R20" pad="1"/>
 <contactref element="LED2" pad="K"/>
 <contactref element="LED4" pad="K"/>
@@ -2634,7 +2633,7 @@ design rules under a new name.</description>
 <contactref element="IC5" pad="4"/>
 <contactref element="C6" pad="1"/>
 <contactref element="IC1" pad="4"/>
-<contactref element="OK1" pad="8"/>
+<contactref element="IC9" pad="8"/>
 <contactref element="R19" pad="1"/>
 <contactref element="C8" pad="2"/>
 <contactref element="IC4" pad="16"/>
@@ -2900,7 +2899,7 @@ design rules under a new name.</description>
 <wire x1="124.46" y1="29.21" x2="126.2634" y2="29.21" width="0.3048" layer="16"/>
 </signal>
 <signal name="N$8">
-<contactref element="OK1" pad="2"/>
+<contactref element="IC9" pad="2"/>
 <contactref element="D1" pad="A"/>
 <contactref element="R21" pad="1"/>
 <wire x1="25.4" y1="36.83" x2="23.18" y2="36.83" width="0.3048" layer="16"/>
@@ -2909,7 +2908,7 @@ design rules under a new name.</description>
 <wire x1="27.9368" y1="36.83" x2="27.945" y2="36.8218" width="0.3048" layer="16"/>
 </signal>
 <signal name="N$18">
-<contactref element="OK1" pad="3"/>
+<contactref element="IC9" pad="3"/>
 <contactref element="D1" pad="C"/>
 <contactref element="MIDI_IN" pad="5"/>
 <contactref element="MIDI" pad="3"/>
@@ -2930,7 +2929,7 @@ design rules under a new name.</description>
 <wire x1="18.028" y1="40.32" x2="16.51" y2="38.802" width="0.3048" layer="16"/>
 </signal>
 <signal name="MIDI">
-<contactref element="OK1" pad="6"/>
+<contactref element="IC9" pad="6"/>
 <contactref element="R19" pad="2"/>
 <contactref element="IC2" pad="5"/>
 <wire x1="94.04" y1="30.48" x2="92.075" y2="30.48" width="0.3048" layer="16"/>
@@ -2954,7 +2953,7 @@ design rules under a new name.</description>
 <wire x1="86.614" y1="27.051" x2="90.043" y2="30.48" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$22">
-<contactref element="OK1" pad="7"/>
+<contactref element="IC9" pad="7"/>
 <contactref element="R20" pad="2"/>
 <wire x1="33.02" y1="36.83" x2="35.179" y2="36.83" width="0.3048" layer="16"/>
 <wire x1="35.179" y1="36.83" x2="35.814" y2="36.195" width="0.3048" layer="16"/>
