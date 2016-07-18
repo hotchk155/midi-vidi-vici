@@ -16704,14 +16704,14 @@ A low-cost storage/filtering possibility in comparison to SMD versions
 <junction x="-119.38" y="-7.62"/>
 </segment>
 <segment>
-<pinref part="IC3" gate="A" pin="RCK"/>
-<wire x1="-142.24" y1="48.26" x2="-162.56" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="-162.56" y1="48.26" x2="-162.56" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="IC7" gate="A" pin="RCK"/>
-<wire x1="-162.56" y1="10.16" x2="-162.56" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="-142.24" y1="10.16" x2="-162.56" y2="10.16" width="0.1524" layer="91"/>
-<junction x="-162.56" y="10.16"/>
+<wire x1="-162.56" y1="53.34" x2="-162.56" y2="15.24" width="0.1524" layer="91"/>
 <label x="-165.1" y="7.62" size="1.778" layer="95" rot="R270"/>
+<pinref part="IC3" gate="A" pin="SCL"/>
+<wire x1="-162.56" y1="15.24" x2="-162.56" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="-142.24" y1="53.34" x2="-162.56" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="IC7" gate="A" pin="SCL"/>
+<wire x1="-142.24" y1="15.24" x2="-162.56" y2="15.24" width="0.1524" layer="91"/>
+<junction x="-162.56" y="15.24"/>
 </segment>
 <segment>
 <pinref part="IC6" gate="G$1" pin="VOUT"/>
@@ -17278,14 +17278,14 @@ A low-cost storage/filtering possibility in comparison to SMD versions
 </net>
 <net name="ST_CLK" class="0">
 <segment>
-<pinref part="IC3" gate="A" pin="SCL"/>
-<wire x1="-142.24" y1="53.34" x2="-149.86" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="-149.86" y1="53.34" x2="-149.86" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="IC7" gate="A" pin="SCL"/>
-<wire x1="-149.86" y1="15.24" x2="-142.24" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="-149.86" y1="53.34" x2="-149.86" y2="81.28" width="0.1524" layer="91"/>
-<junction x="-149.86" y="53.34"/>
+<wire x1="-149.86" y1="81.28" x2="-149.86" y2="48.26" width="0.1524" layer="91"/>
 <label x="-149.86" y="83.82" size="1.778" layer="95" rot="R270"/>
+<pinref part="IC7" gate="A" pin="RCK"/>
+<wire x1="-149.86" y1="48.26" x2="-149.86" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-142.24" y1="10.16" x2="-149.86" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="A" pin="RCK"/>
+<wire x1="-142.24" y1="48.26" x2="-149.86" y2="48.26" width="0.1524" layer="91"/>
+<junction x="-149.86" y="48.26"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="RA5"/>
